@@ -105,14 +105,15 @@ strong {color: $strong;
 
 
 .button {
-    background-color: #c91c70;
+    background-color: #1cc97b;
     border: none;
-    color: white;
+    color: rgb(212, 45, 45);
     padding: 10px 25px;
     text-align: center;
     display: inline-block;
+    text-decoration: none;
     font-size: 15px;
     margin: 4px 35px;
     cursor: pointer;
-    text-decoration: none;
+    
 }
