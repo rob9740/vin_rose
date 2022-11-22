@@ -2,118 +2,182 @@
 @import "mixin";
 
 
-* {margin: 0px;
+/*** FONT ****/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Open+Sans:wght@600&display=swap');
+
+
+
+*{
+    margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+  }
+
+/**** NAVBAR ****/
+@media screen and (min-width:992px){
+    .navbar-collapse{
+        flex-grow:0;
+    }
+    
+    .container-fluid.my-container-fluid{
+        justify-content:space-between;
+    }
+}
+
+.navbar{
+    background-color: #3E4149;
+}
+
+.navbar .navbar-nav .nav-link{
+    color: #fff;
 }
 
 
-/*******   BODY ***********
+/**** CAROUSEL ****/
 
-
-/*******   NAV ***********/
-header {display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: $bg_color;
-    padding-left: 30px;
+@media screen and (min-width:576px) {
+    .carousel-inner{
+        display: flex;
+    }
+    .carousel-item{
+        display: block;
+        margin-right: 0px;
+        flex: 0 0 calc(100%/3);
+    }
 }
 
-h1 {color: $header;
-    font-size: 24px;
-    a {text-decoration: none;}
+.carousel-inner{
+    padding: 5px;
+}/**** placement du card ****/
+
+.card{
+    margin: 2px;
+    box-shadow: 2px 6px 8px 0px rgb(22, 22, 26, .18);
+}/**** card ****/
+
+.img-wrapper{
+    max-width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 }
 
-nav ul {display: flex;
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.carousel-control-prev, .carousel-control-next{
+    width: 45px;
+    height: 45px;
+    background-color: #1e1e1e;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50);
+    opacity: .3;
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover{
+    opacity: 8;
+}
+/**** PAGE ACCUEIL ****/
+.deco{
+    display: flex;
+}
+
+
+
+/**** PAGE PROVENCE ****/
+.bodyProv{
+    background-image: url("../img/4366.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+
+.prov{
+    font-family: 'Josefin Sans', sans-serif;
+    
+}
+
+.titreProv{
+    
+    color: #9e1616;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/**** PAGE BORDEAUX ****/
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 300px 300px 300px;
     justify-content: space-around;
-    }
-    
-
-nav ul li {list-style: none;
-    text-decoration: none;
-    margin: 20px;
-    
-    
-}
-
-
-
-nav ul li a {text-decoration: none;
-            &:hover {
-                color: chocolate;
-                border: 1px solid $nav;
-                padding: 3px;
-                
-            }
-}
-
-
-/*******   MAIN ***********/
-h2 {text-align: center;
-    font-size: 50px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
-
-.img {display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
-    img {border: 1px solid $border-radius;
-        margin: 0px 10px;
-        border-radius: 5px;
-    }
-}
-
-.identite {color: black;
-    font-family: sans-serif;
+    gap: 55px;
     border: 1px solid black;
 }
 
-
-
-.identite {margin:  5px 10px;
-    padding:2px 5px;
+.verre{
+    margin-top: 10px;
+    border: 1px solid black;
+    
 }
 
-.plan {text-align: center;}
-
-
-
-
-strong {color: $strong;
-    line-height: 2px;
-    letter-spacing: 0.1em;
-}
-
-
-.txt {width: auto;
-    height:auto;
+.container{
     display: flex;
     justify-content: space-between;
-    @include div_txt;
+    border: 1px solid black;
 }
 
-.boite {background-color: white;
-    padding: 5px;
-    width: 450px;
-    height:auto;
-    display: flex;
-    justify-content: flex-start;
-}
-
-.espace {padding-top: 5px;}
-
-
-.button {
-    background-color: #1cc97b;
-    border: none;
-    color: rgb(212, 45, 45);
-    padding: 10px 25px;
+.verre{
     text-align: center;
-    display: inline-block;
-    text-decoration: none;
-    font-size: 15px;
-    margin: 4px 35px;
-    cursor: pointer;
+}
+
+
+
+img{
+    height: 300px;
+}
+
+p{
+    font-family: 'open sans', sans-serif;
+    text-align: center;
+}
+
+
+
+p{
+    text-align: left;
+}
+
+
+.row{
+    margin-left: 10px;
     
+}
+
+.gauche{
+    
+    padding: 5px;
+    border: 5px solid #6B2D5C;
+    border-radius: 5px;
+}
+
+.plan{
+    width: 500px;
+    height: 645px;
+    padding-top: 5px;
 }

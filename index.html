@@ -4,46 +4,246 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    
+    <title>CAROUSEL CARD</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./SASS/style.css">
 </head>
 <body>
-   
 
-    <header>
-        <h1><a href="">(A)ROSÉ-MOI</a></h1>
-        <nav>
-            <ul>
-                <li><a href="./index.html">Accueil</a></li>
-                <li><a href="./provence.html">Provence</a></li>
-                <li><a href="./bordeaux.html">Bordeaux</a></li>  
-                <li><a href="./valoire.html">Val de loire</a></li>
-                <li><a href="./rhone.html">Côte du rhone</a></li>
-                <li><a href="#">Pays d'oc</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid my-container-fluid">
+      <a class="navbar-brand fw-bold" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="bordeaux.html">Bordeaux</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="provence.html">Provence</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="rhone.html">Rhône</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="valoire.html">Valoire</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav><!--- FIN NAV -->
 
-        <h2>ACCUEIL</h2>
 
-        <div class="plan">
-        <img src="./img/vignoble-France-2.jpeg">
+
+  <main>
+
+    <div id="carouselExampleControls" class="carousel" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="card">
+            <div class="img-wrapper">
+            <img src="./img/4366.jpeg" alt="...">
+            </div><!-- FIN IMG-WRAPPER-->
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
         </div>
+        <div class="carousel-item">
+          <div class="card">
+            <div class="img-wrapper">
+              <img src="./img/4366.jpeg" alt="...">
+              </div><!-- FIN IMG-WRAPPER-->
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+         </div>
+        <div class="carousel-item">
+          <div class="card">
+            <div class="img-wrapper">
+              <img src="./img/4366.jpeg" alt="...">
+              </div><!-- FIN IMG-WRAPPER-->
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card">
+            <div class="img-wrapper">
+              <img src="./img/4366.jpeg" alt="...">
+              </div><!-- FIN IMG-WRAPPER-->
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card">
+            <div class="img-wrapper">
+              <img src="./img/4366.jpeg" alt="...">
+              </div><!-- FIN IMG-WRAPPER-->
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card">
+            <div class="img-wrapper">
+              <img src="./img/4366.jpeg" alt="...">
+              </div><!-- FIN IMG-WRAPPER-->
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card">
+            <div class="img-wrapper">
+              <img src="./img/4366.jpeg" alt="...">
+              </div><!-- FIN IMG-WRAPPER-->
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card">
+            <div class="img-wrapper">
+              <img src="./img/4366.jpeg" alt="...">
+              </div><!-- FIN IMG-WRAPPER-->
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card">
+            <div class="img-wrapper">
+              <img src="./img/4366.jpeg" alt="...">
+              </div><!-- FIN IMG-WRAPPER-->
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div><!-- FIN carousel-inner-->
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div><!--  FIN carouselExampleControls -->
+
+  
+
+
+
+
+    
+
+      <div class="container-fluid">
+
+        
+        <div class="deco">
+        <div class="card border-primary mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="./img/domaine-de-bise-rose-de-loire-265x375.png" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">domaine-de-bise-rose-de-loire</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card border-primary mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="./img/domaine-de-bise-rose-de-loire-265x375.png" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">domaine-de-bise-rose-de-loire</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>     
+      </div><!--  FIN CONTAINER FLUID -->
+
 
         
 
 
-    </main>
 
-            <a href="test_branche.html">test branches</a>
+    </main><!--  FIN MAIN -->
+    
+
+
+
+    
+   
+
+    
+
+        
+            
+                
             
 
-    <!----- SCRIPT-------->
+           
+       
+   
+
+
+          
+  </main><!-- FIN MAIN -->          
+
+    <!---- SCRIPT ------>
  
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
